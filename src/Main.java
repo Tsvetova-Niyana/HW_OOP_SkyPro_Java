@@ -16,7 +16,7 @@ public class Main {
 
         //создание экземпляров класса Gryffindor
         Gryffindor[] gryffindors = {
-                new Gryffindor("Гарри", "Поттер", 60, 150, 20,
+                new Gryffindor("Гарри", "Поттер", 60, 90, 20,
                         30, 70),
                 new Gryffindor("Гермиона", "Грейнджер", 100, 170, 25,
                         50, 90),
@@ -84,34 +84,55 @@ public class Main {
         }
 
         //вывод информации об учениках Хогвартса
+        System.out.println("-----------------------------------------------------------------------------------------");
         Hogwarts.printListHogwarts(hogwartsStudent);
 
         //вывод информации об учениках факультета Гриффиндор
+        System.out.println("-----------------------------------------------------------------------------------------");
         Gryffindor.printInfoStudents(gryffindors);
 
         //вывод информации об учениках факультета Пуффендуй
+        System.out.println("-----------------------------------------------------------------------------------------");
         Puffendui.printInfoStudents(puffenduis);
 
         //вывод информации об учениках факультета Когтевран
+        System.out.println("-----------------------------------------------------------------------------------------");
         Ravenclaw.printInfoStudents(ravenclaws);
 
         //вывод информации об учениках факультета Слизерин
+        System.out.println("-----------------------------------------------------------------------------------------");
         Slytherin.printInfoStudents(slytherins);
 
         //сравнение учеников факультета Гриффиндор
+        System.out.println("\nСравнение учеников факультета Гриффиндор");
+        System.out.println("-----------------------------------------------------------------------------------------");
         Gryffindor.getEqualsStudents(gryffindors[0], gryffindors[2]);
         Gryffindor.getEqualsStudents(gryffindors[2], gryffindors[1]);
 
         //сравнение учеников факультета Пуффендуй
+        System.out.println("\nСравнение учеников факультета Пуффендуй");
+        System.out.println("-----------------------------------------------------------------------------------------");
         Puffendui.getEqualsStudents(puffenduis[0], puffenduis[2]);
         Puffendui.getEqualsStudents(puffenduis[2], puffenduis[1]);
 
         //сравнение учеников факультета Когтевран
+        System.out.println("\nСравнение учеников факультета Когтевран");
+        System.out.println("-----------------------------------------------------------------------------------------");
         Ravenclaw.getEqualsStudents(ravenclaws[0], ravenclaws[2]);
         Ravenclaw.getEqualsStudents(ravenclaws[2], ravenclaws[1]);
 
         //сравнение учеников факультета Слизерин
+        System.out.println("\nСравнение учеников факультета Слизерин");
+        System.out.println("-----------------------------------------------------------------------------------------");
         Slytherin.getEqualsStudents(slytherins[0], slytherins[2]);
         Slytherin.getEqualsStudents(slytherins[2], slytherins[1]);
+
+        //сравнение учеников школы Хогвартс
+        System.out.println("\nСравнение учеников школы Хогвартс");
+        System.out.println("-----------------------------------------------------------------------------------------");
+        Hogwarts.getEqualsStudents(hogwartsStudent[0], hogwartsStudent[1]);
+        Hogwarts.getEqualsStudents(hogwartsStudent[0], hogwartsStudent[2]);
+        Hogwarts.getEqualsStudents(hogwartsStudent[0], hogwartsStudent[3]);
+        Hogwarts.getEqualsStudents(hogwartsStudent[9], hogwartsStudent[0]);
     }
 }

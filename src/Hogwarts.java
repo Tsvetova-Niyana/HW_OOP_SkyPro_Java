@@ -74,9 +74,46 @@ public class Hogwarts {
         }
     }
 
+    /*
+    Реализуйте метод, который сравнивает двух любых учеников Хогвартса по силе магии и расстоянию трансгрессии,
+    и выводит в консоль сравнительную оценку между двумя учениками.
+
+    Например, Драко Малфой обладает бОльшей мощностью магии, чем Захария Смит.
+     */
+    public static void getEqualsStudents(Hogwarts hogwarts1, Hogwarts hogwarts2) {
+        System.out.println();
+        System.out.println(hogwarts1.getName() + " " + hogwarts1.getSurname()+ " : "
+                + "мощность колдовства: " + hogwarts1.getPowerWitchcraft());
+        System.out.println(hogwarts2.getName() + " " + hogwarts2.getSurname()+ " : "
+                + "мощность колдовства: " + hogwarts2.getPowerWitchcraft());
+        if (hogwarts1.getPowerWitchcraft() > hogwarts2.getPowerWitchcraft()) {
+            System.out.println(hogwarts1.getName() + " " + hogwarts1.getSurname()
+                    + " обладает бОльшей мощностью магии, чем " + hogwarts2.getName() + " " + hogwarts2.getSurname());
+        } else {
+            System.out.println(hogwarts2.getName() + " " + hogwarts2.getSurname()
+                    + " обладает бОльшей мощностью магии, чем " + hogwarts1.getName() + " " + hogwarts1.getSurname());
+        }
+        //"расстояние трансгрессии: " +
+        System.out.println();
+        System.out.println(hogwarts1.getName() + " " + hogwarts1.getSurname()+ " : "
+                + "расстояние трансгрессии: " + hogwarts1.getTransgressionDistance());
+        System.out.println(hogwarts2.getName() + " " + hogwarts2.getSurname()+ " : "
+                + "расстояние трансгрессии: " + hogwarts2.getTransgressionDistance());
+        if (hogwarts1.getTransgressionDistance() > hogwarts2.getTransgressionDistance()) {
+            System.out.println(hogwarts1.getName() + " " + hogwarts1.getSurname()
+                    + " обладает бОльшим расстоянием трансгресии, чем " + hogwarts2.getName() + " "
+                    + hogwarts2.getSurname());
+        } else {
+            System.out.println(hogwarts2.getName() + " " + hogwarts2.getSurname()
+                    + " обладает бОльшим расстоянием трансгресии, чем " + hogwarts1.getName() + " "
+                    + hogwarts1.getSurname());
+
+        }
+    }
+
     @Override
     public String toString() {
-        return  "Имя ученика: " + name + '\n' +
+        return "Имя ученика: " + name + '\n' +
                 "Фамилия ученика: " + surname + '\n' +
                 "мощность колдовства: " + powerWitchcraft + '\n' +
                 "расстояние трансгрессии: " + transgressionDistance + '\n';

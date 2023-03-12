@@ -1,4 +1,4 @@
-/*
+package oop_hw2_2;/*
 Гарри Поттер, Гермиона Грейнджер и Рон Уизли учатся на факультете Гриффиндор.
 
 Драко Малфой, Грэхэм Монтегю, Грегори Гойл учатся на Слизерине.
@@ -14,7 +14,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        //создание экземпляров класса Gryffindor
+        //создание экземпляров класса oop_hw2_2.Gryffindor
         Gryffindor[] gryffindors = {
                 new Gryffindor("Гарри", "Поттер", 60, 90, 20,
                         30, 70),
@@ -24,7 +24,7 @@ public class Main {
                         50, 30)
         };
 
-        //создание экземпляров класса Puffendui
+        //создание экземпляров класса oop_hw2_2.Puffendui
         Puffendui[] puffenduis = {
                 new Puffendui("Захария", "Смит", 78, 18, 68,
                         66, 97),
@@ -34,7 +34,7 @@ public class Main {
                         45, 32)
         };
 
-        //создание экземпляров класса Ravenclaw
+        //создание экземпляров класса oop_hw2_2.Ravenclaw
         Ravenclaw[] ravenclaws = {
                 new Ravenclaw("Чжоу", "Чанг", 78, 83, 82,
                         94, 49, 64),
@@ -44,7 +44,7 @@ public class Main {
                         27, 85, 87)
         };
 
-        //создание экземпляров класса Slytherin
+        //создание экземпляров класса oop_hw2_2.Slytherin
         Slytherin[] slytherins = {
                 new Slytherin("Драко", "Малфой", 50, 94, 90,
                         59, 99, 70, 90),
@@ -57,7 +57,7 @@ public class Main {
         //подсчет длины массива учеников Хогвартса
         int lenHogwartsStudent = gryffindors.length + puffenduis.length + ravenclaws.length + slytherins.length;
 
-        //создание экземпляров класса Hogwarts
+        //создание экземпляров класса oop_hw2_2.Hogwarts
         Hogwarts[] hogwartsStudent = new Hogwarts[lenHogwartsStudent];
         int startCode = 0;
         for (int i = 0; i < gryffindors.length; i++) {

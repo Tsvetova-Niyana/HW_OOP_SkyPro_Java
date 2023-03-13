@@ -5,7 +5,7 @@ package oop_hw2_3;
 – В исправленном коде применен принцип полиморфизма.
  */
 
-public abstract class WheeledTransport implements ServiceWheeledTransportInterface {
+public abstract class WheeledTransport{
     private String modelName;
     private int wheelsCount;
 
@@ -31,15 +31,6 @@ public abstract class WheeledTransport implements ServiceWheeledTransportInterfa
     }
 
     public void updateTyre() {
-
-    }
-
-    public void checkEngine() {
-
-    }
-
-
-    public void checkTrailer() {
-
+        System.out.println("Меняем покрышку");
     }
 }

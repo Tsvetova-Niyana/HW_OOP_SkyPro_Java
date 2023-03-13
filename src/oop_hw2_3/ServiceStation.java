@@ -7,19 +7,36 @@ package oop_hw2_3;
 
 public class ServiceStation {
 
-    public void check(WheeledTransport... wheeledTransport) {
-        System.out.println(wheeledTransport.length);
-        for (int i = 0; i < wheeledTransport.length; i++) {
-            if (wheeledTransport != null) {
-                System.out.println("Обслуживаем " + wheeledTransport[i].getModelName());
-                wheeledTransport[i].getWheelsCount();
-                for (int j = 0; j < wheeledTransport[i].getWheelsCount(); j++) {
-                    wheeledTransport[i].updateTyre();
-                }
-                wheeledTransport[i].checkEngine();
-                wheeledTransport[i].checkTrailer();
-                System.out.println();
+    public void check(Car car) {
+        if (car != null) {
+            System.out.println("Обслуживаем " + car.getModelName());
+            for (int i = 0; i < car.getWheelsCount(); i++) {
+                car.updateTyre();
+            }
+            car.checkEngine();
+        }
+        System.out.println();
+    }
+
+    public void check(Bicycle bicycle) {
+        if (bicycle != null) {
+            System.out.println("Обслуживаем " + bicycle.getModelName());
+            for (int i = 0; i < bicycle.getWheelsCount(); i++) {
+                bicycle.updateTyre();
             }
         }
+        System.out.println();
+    }
+
+    public void check(Truck truck) {
+        if (truck != null) {
+            System.out.println("Обслуживаем " + truck.getModelName());
+            for (int i = 0; i < truck.getWheelsCount(); i++) {
+                truck.updateTyre();
+            }
+            truck.checkEngine();
+            truck.checkTrailer();
+        }
+        System.out.println();
     }
 }

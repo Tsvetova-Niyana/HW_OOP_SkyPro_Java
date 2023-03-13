@@ -5,7 +5,7 @@ package oop_hw2_3;
 – В исправленном коде применен принцип полиморфизма.
  */
 
-public abstract class WheeledTransport{
+public class WheeledTransport{
     private String modelName;
     private int wheelsCount;
 
